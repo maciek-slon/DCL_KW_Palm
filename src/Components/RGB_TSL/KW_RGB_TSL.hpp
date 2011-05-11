@@ -13,6 +13,7 @@
 #include "Panel_Empty.hpp"
 #include "DataStream.hpp"
 #include "Props.hpp"
+#include "Common/Timer.hpp"
 
 #include <iostream>
 #include <fstream>
@@ -138,6 +139,12 @@ private:
 
 	float total;
 	int loops;
+
+	float atan_arr[16384];
+	float sqrt_arr[4000];
+
+
+	Common::Timer timer;
 
 };
 
